@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tritanium Power™</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #05070b;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .card {
+      background: #07111f;
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .hero-glow {
+      background:
+        radial-gradient(circle at top left, rgba(14,165,233,0.22), transparent 35%),
+        radial-gradient(circle at top right, rgba(245,158,11,0.22), transparent 32%),
+        radial-gradient(circle at bottom, rgba(34,197,94,0.10), transparent 35%);
+    }
+  </style>
+</head>
+
+<body class="text-white">
+
+<main class="min-h-screen">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden px-6 py-24 md:px-16">
+
+    <div class="absolute inset-0 hero-glow"></div>
+
+    <div class="relative mx-auto max-w-7xl">
+
+      <div class="mb-6 flex flex-wrap items-center gap-4">
+
+        <div class="inline-flex rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-200">
+          Tritanium Power™
+        </div>
+
+        <button
+          onclick="toggleLanguage()"
+          id="langToggle"
+          class="rounded-full border border-white/20 px-5 py-2 text-sm font-bold"
+        >
+          Español
+        </button>
+
+      </div>
+
+      <h1
+        class="max-w-5xl text-5xl font-black tracking-tight md:text-7xl"
+        data-en="Resilient energy systems for the next generation of infrastructure."
+        data-es="Sistemas energéticos resilientes para la próxima generación de infraestructura."
+      >
+        Resilient energy systems for the next generation of infrastructure.
+      </h1>
+
+      <p
+        class="mt-6 max-w-3xl text-lg text-slate-300 md:text-2xl"
+        data-en="Tritanium Power™ develops resilient power systems, solar infrastructure, intelligent microgrids, emergency energy systems, and future wireless energy technologies under the True Green Doctrine."
+        data-es="Tritanium Power™ desarrolla sistemas energéticos resilientes, infraestructura solar, microredes inteligentes, sistemas de energía de emergencia y futuras tecnologías inalámbricas bajo la Doctrina True Green."
+      >
+        Tritanium Power™ develops resilient power systems,
+        solar infrastructure,
+        intelligent microgrids,
+        emergency energy systems,
+        and future wireless energy technologies
+        under the True Green Doctrine.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+
+        <a
+          href="#systems"
+          class="rounded-full bg-cyan-400 px-6 py-3 font-bold text-black"
+          data-en="Explore Systems"
+          data-es="Explorar Sistemas"
+        >
+          Explore Systems
+        </a>
+
+        <a
+          href="#contact"
+          class="rounded-full border border-white/20 px-6 py-3 font-bold"
+          data-en="Partner With Us"
+          data-es="Asociarse Con Nosotros"
+        >
+          Partner With Us
+        </a>
+
+      </div>
+
+      <div class="mt-16 grid gap-6 md:grid-cols-4">
+
+        <div class="glass rounded-3xl p-7">
+
+          <h2
+            class="text-2xl font-bold text-cyan-300"
+            data-en="Power"
+            data-es="Energía"
+          >
+            Power
+          </h2>
+
+          <p
+            class="mt-3 text-slate-300"
+            data-en="Resilient power systems for infrastructure, facilities, and emergency operations."
+            data-es="Sistemas energéticos resilientes para infraestructura, instalaciones y operaciones de emergencia."
+          >
+            Resilient power systems
+            for infrastructure,
+            facilities,
+            and emergency operations.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+
+          <h2
+            class="text-2xl font-bold text-amber-300"
+            data-en="Solar"
+            data-es="Solar"
+          >
+            Solar
+          </h2>
+
+          <p
+            class="mt-3 text-slate-300"
+            data-en="Solar infrastructure, smart generation systems, and scalable clean energy deployment."
+            data-es="Infraestructura solar, sistemas inteligentes de generación y despliegue escalable de energía limpia."
+          >
+            Solar infrastructure,
+            smart generation systems,
+            and scalable clean energy deployment.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+
+          <h2
+            class="text-2xl font-bold text-blue-300"
+            data-en="Microgrids"
+            data-es="Microredes"
+          >
+            Microgrids
+          </h2>
+
+          <p
+            class="mt-3 text-slate-300"
+            data-en="AI-managed resilient energy distribution and intelligent infrastructure balancing."
+            data-es="Distribución energética resiliente administrada por IA y balance inteligente de infraestructura."
+          >
+            AI-managed resilient energy distribution
+            and intelligent infrastructure balancing.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+
+          <h2
+            class="text-2xl font-bold text-emerald-300"
+            data-en="Future Energy"
+            data-es="Energía Futura"
+          >
+            Future Energy
+          </h2>
+
+          <p
+            class="mt-3 text-slate-300"
+            data-en="Wireless energy transfer, intelligent charging ecosystems, and next-generation infrastructure power."
+            data-es="Transferencia inalámbrica de energía, ecosistemas inteligentes de carga y energía de infraestructura de próxima generación."
+          >
+            Wireless energy transfer,
+            intelligent charging ecosystems,
+            and next-generation infrastructure power.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+            </section>
+<!-- SYSTEMS -->
+  <section id="systems" class="px-6 py-20 md:px-16">
+
+    <div class="mx-auto max-w-7xl">
+
+      <p
+        class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-300"
+        data-en="Power Systems"
+        data-es="Sistemas Energéticos"
+      >
+        Power Systems
+      </p>
+
+      <h2
+        class="mt-4 max-w-5xl text-4xl font-black md:text-6xl"
+        data-en="Built for resilient infrastructure and long-term energy independence."
+        data-es="Construido para infraestructura resiliente e independencia energética a largo plazo."
+      >
+        Built for resilient infrastructure and long-term energy independence.
+      </h2>
+
+      <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+        <!-- CARD -->
+        <div class="card rounded-3xl p-7">
+
+          <div class="mb-5 inline-flex rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-bold text-cyan-300">
+            CORE ENERGY
+          </div>
+
+          <h3
+            class="text-2xl font-bold"
+            data-en="PowerCore™"
+            data-es="PowerCore™"
+          >
+            PowerCore™
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Resilient AI-managed power architecture for infrastructure, facilities, emergency systems, and regional deployments."
+            data-es="Arquitectura energética resiliente administrada por IA para infraestructura, instalaciones, sistemas de emergencia y despliegues regionales."
+          >
+            Resilient AI-managed power architecture
+            for infrastructure,
+            facilities,
+            emergency systems,
+            and regional deployments.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="card rounded-3xl p-7">
+
+          <div class="mb-5 inline-flex rounded-full bg-amber-400/10 px-3 py-1 text-xs font-bold text-amber-300">
+            SOLAR
+          </div>
+
+          <h3
+            class="text-2xl font-bold"
+            data-en="Solar Infrastructure"
+            data-es="Infraestructura Solar"
+          >
+            Solar Infrastructure
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Utility-scale solar systems, rooftop deployment, smart generation, and scalable energy production."
+            data-es="Sistemas solares a escala industrial, despliegue en techos, generación inteligente y producción energética escalable."
+          >
+            Utility-scale solar systems,
+            rooftop deployment,
+            smart generation,
+            and scalable energy production.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="card rounded-3xl p-7">
+
+          <div class="mb-5 inline-flex rounded-full bg-blue-400/10 px-3 py-1 text-xs font-bold text-blue-300">
+            DISTRIBUTION
+          </div>
+
+          <h3
+            class="text-2xl font-bold"
+            data-en="Smart Microgrids"
+            data-es="Microredes Inteligentes"
+          >
+            Smart Microgrids
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Localized resilient power distribution for communities, hospitals, infrastructure sites, and emergency operations."
+            data-es="Distribución energética resiliente localizada para comunidades, hospitales, sitios de infraestructura y operaciones de emergencia."
+          >
+            Localized resilient power distribution
+            for communities,
+            hospitals,
+            infrastructure sites,
+            and emergency operations.
+          </p>
+
+        </div>
+
+        <!-- CARD -->
+        <div class="card rounded-3xl p-7">
+
+          <div class="mb-5 inline-flex rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-bold text-emerald-300">
+            FUTURE SYSTEMS
+          </div>
+
+          <h3
+            class="text-2xl font-bold"
+            data-en="Wireless PowerGrid™"
+            data-es="Wireless PowerGrid™"
+          >
+            Wireless PowerGrid™
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Future wireless energy transfer systems for charging, infrastructure support, drones, and autonomous platforms."
+            data-es="Futuros sistemas inalámbricos de transferencia energética para carga, soporte de infraestructura, drones y plataformas autónomas."
+          >
+            Future wireless energy transfer systems
+            for charging,
+            infrastructure support,
+            drones,
+            and autonomous platforms.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- TRUE GREEN -->
+  <section class="px-6 py-20 md:px-16">
+
+    <div class="mx-auto grid max-w-7xl gap-10 rounded-[2rem] border border-emerald-400/20 bg-emerald-400/5 p-8 md:grid-cols-2 md:p-14">
+
+      <div>
+
+        <p
+          class="text-sm font-bold uppercase tracking-[0.3em] text-emerald-300"
+          data-en="True Green Doctrine"
+          data-es="Doctrina True Green"
+        >
+          True Green Doctrine
+        </p>
+
+        <h2
+          class="mt-4 text-4xl font-black md:text-5xl"
+          data-en="Energy infrastructure designed for resilience, independence, and long-term sustainability."
+          data-es="Infraestructura energética diseñada para resiliencia, independencia y sostenibilidad a largo plazo."
+        >
+          Energy infrastructure designed
+          for resilience,
+          independence,
+          and long-term sustainability.
+        </h2>
+
+        <p
+          class="mt-6 text-slate-300"
+          data-en="Tritanium Power™ is being developed to support offices, warehouses, command centers, towers, Guardian Pods™, emergency systems, and future infrastructure deployments."
+          data-es="Tritanium Power™ está siendo desarrollado para respaldar oficinas, almacenes, centros de comando, torres, Guardian Pods™, sistemas de emergencia y futuros despliegues de infraestructura."
+        >
+          Tritanium Power™ is being developed
+          to support offices,
+          warehouses,
+          command centers,
+          towers,
+          Guardian Pods™,
+          emergency systems,
+          and future infrastructure deployments.
+        </p>
+
+      </div>
+
+      <div class="space-y-5">
+
+        <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+          <span class="mr-3 text-emerald-300">01</span>
+
+          <span
+            data-en="Resilient clean energy systems"
+            data-es="Sistemas energéticos limpios y resilientes"
+          >
+            Resilient clean energy systems
+          </span>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+          <span class="mr-3 text-emerald-300">02</span>
+
+          <span
+            data-en="AI-assisted infrastructure balancing"
+            data-es="Balance de infraestructura asistido por IA"
+          >
+            AI-assisted infrastructure balancing
+          </span>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+          <span class="mr-3 text-emerald-300">03</span>
+
+          <span
+            data-en="Emergency operational continuity"
+            data-es="Continuidad operativa de emergencia"
+          >
+            Emergency operational continuity
+          </span>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+          <span class="mr-3 text-emerald-300">04</span>
+
+          <span
+            data-en="Future-ready infrastructure energy"
+            data-es="Energía de infraestructura preparada para el futuro"
+          >
+            Future-ready infrastructure energy
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- ENERGY GRID -->
+  <section class="px-6 py-20 md:px-16">
+
+    <div class="mx-auto max-w-7xl">
+
+      <p
+        class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-300"
+        data-en="Energy Infrastructure"
+        data-es="Infraestructura Energética"
+      >
+        Energy Infrastructure
+      </p>
+
+      <h2
+        class="mt-4 max-w-5xl text-4xl font-black md:text-6xl"
+        data-en="From generation to intelligent distribution."
+        data-es="Desde la generación hasta la distribución inteligente."
+      >
+        From generation to intelligent distribution.
+      </h2>
+
+      <div class="mt-14 grid gap-6 lg:grid-cols-2">
+
+        <!-- LEFT -->
+        <div class="glass rounded-[2rem] p-8">
+
+          <div class="mb-8 flex items-center justify-between">
+
+            <div>
+
+              <p class="text-sm uppercase tracking-[0.3em] text-cyan-300">
+                POWER GRID
+              </p>
+
+              <h3
+                class="mt-3 text-3xl font-black"
+                data-en="Infrastructure Energy Status"
+                data-es="Estado Energético de Infraestructura"
+              >
+                Infrastructure Energy Status
+              </h3>
+
+            </div>
+
+            <div class="flex items-center gap-2">
+
+              <div class="h-3 w-3 rounded-full bg-emerald-400"></div>
+
+              <span
+                class="text-sm text-emerald-300"
+                data-en="Stable"
+                data-es="Estable"
+              >
+                Stable
+              </span>
+
+            </div>
+
+          </div>
+
+          <div class="space-y-5">
+
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+
+              <div class="mb-2 flex items-center justify-between">
+
+                <span class="font-bold text-cyan-300">
+                  PowerCore™
+                </span>
+
+                <span class="text-sm text-cyan-300">
+                  97%
+                </span>
+
+              </div>
+
+              <div class="h-2 rounded-full bg-white/10">
+                <div class="h-2 w-[97%] rounded-full bg-cyan-400"></div>
+              </div>
+
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+
+              <div class="mb-2 flex items-center justify-between">
+
+                <span class="font-bold text-amber-300">
+                  Solar Grid
+                </span>
+
+                <span class="text-sm text-amber-300">
+                  Active
+                </span>
+
+              </div>
+
+              <div class="h-2 rounded-full bg-white/10">
+                <div class="h-2 w-[84%] rounded-full bg-amber-400"></div>
+              </div>
+
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+
+              <div class="mb-2 flex items-center justify-between">
+
+                <span class="font-bold text-blue-300">
+                  Smart Microgrids
+                </span>
+
+                <span class="text-sm text-blue-300">
+                  Connected
+                </span>
+
+              </div>
+
+              <div class="h-2 rounded-full bg-white/10">
+                <div class="h-2 w-[88%] rounded-full bg-blue-400"></div>
+              </div>
+
+            </div>
+
+            <div class="rounded-2xl border border-white/10 bg-black/30 p-5">
+
+              <div class="mb-2 flex items-center justify-between">
+
+                <span class="font-bold text-emerald-300">
+                  Wireless PowerGrid™
+                </span>
+
+                <span class="text-sm text-emerald-300">
+                  Experimental
+                </span>
+
+              </div>
+
+              <div class="h-2 rounded-full bg-white/10">
+                <div class="h-2 w-[52%] rounded-full bg-emerald-400"></div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- RIGHT -->
+        <div class="grid gap-6">
+
+          <div class="card rounded-[2rem] p-8">
+
+            <div class="mb-5 inline-flex rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-bold text-cyan-300">
+              RESILIENT ENERGY
+            </div>
+
+            <h3
+              class="text-3xl font-black"
+              data-en="Infrastructure Continuity"
+              data-es="Continuidad de Infraestructura"
+            >
+              Infrastructure Continuity
+            </h3>
+
+            <p
+              class="mt-5 text-slate-400"
+              data-en="Tritanium Power™ is designed to support infrastructure continuity during outages, disasters, environmental instability, and emergency operations."
+              data-es="Tritanium Power™ está diseñado para respaldar continuidad de infraestructura durante apagones, desastres, inestabilidad ambiental y operaciones de emergencia."
+            >
+              Tritanium Power™ is designed
+              to support infrastructure continuity
+              during outages,
+              disasters,
+              environmental instability,
+              and emergency operations.
+            </p>
+
+          </div>
+
+          <div class="card rounded-[2rem] p-8">
+
+            <div class="mb-5 inline-flex rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-bold text-emerald-300">
+              FUTURE ENERGY
+            </div>
+
+            <h3
+              class="text-3xl font-black"
+              data-en="Wireless Energy Systems"
+              data-es="Sistemas Energéticos Inalámbricos"
+            >
+              Wireless Energy Systems
+            </h3>
+
+            <p
+              class="mt-5 text-slate-400"
+              data-en="Future wireless charging and infrastructure energy systems designed for autonomous platforms, towers, pods, drones, and emergency networks."
+              data-es="Futuros sistemas inalámbricos de carga y energía diseñados para plataformas autónomas, torres, pods, drones y redes de emergencia."
+            >
+              Future wireless charging
+              and infrastructure energy systems
+              designed for autonomous platforms,
+              towers,
+              pods,
+              drones,
+              and emergency networks.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- GLOBAL ENERGY -->
+  <section class="px-6 py-20 md:px-16">
+
+    <div class="mx-auto max-w-7xl rounded-[2rem] border border-cyan-400/20 bg-cyan-400/5 p-8 md:p-14">
+
+      <p
+        class="text-sm font-bold uppercase tracking-[0.3em] text-cyan-300"
+        data-en="Global Energy Infrastructure"
+        data-es="Infraestructura Energética Global"
+      >
+        Global Energy Infrastructure
+      </p>
+
+      <h2
+        class="mt-4 max-w-5xl text-4xl font-black md:text-6xl"
+        data-en="Designed for resilient deployment across nations, regions, and critical infrastructure."
+        data-es="Diseñado para despliegue resiliente en naciones, regiones e infraestructura crítica."
+      >
+        Designed for resilient deployment
+        across nations,
+        regions,
+        and critical infrastructure.
+      </h2>
+
+      <div class="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+        <div class="glass rounded-3xl p-7">
+
+          <h3
+            class="text-2xl font-bold text-cyan-300"
+            data-en="Regional Power"
+            data-es="Energía Regional"
+          >
+            Regional Power
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Localized resilient energy systems for cities, communities, and infrastructure corridors."
+            data-es="Sistemas energéticos resilientes localizados para ciudades, comunidades y corredores de infraestructura."
+          >
+            Localized resilient energy systems
+            for cities,
+            communities,
+            and infrastructure corridors.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+
+          <h3
+            class="text-2xl font-bold text-amber-300"
+            data-en="Emergency Energy"
+            data-es="Energía de Emergencia"
+          >
+            Emergency Energy
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Power systems for emergency operations, command centers, communications, and disaster response."
+            data-es="Sistemas energéticos para operaciones de emergencia, centros de comando, comunicaciones y respuesta a desastres."
+          >
+            Power systems for emergency operations,
+            command centers,
+            communications,
+            and disaster response.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+
+          <h3
+            class="text-2xl font-bold text-blue-300"
+            data-en="Infrastructure Scaling"
+            data-es="Escalamiento de Infraestructura"
+          >
+            Infrastructure Scaling
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Modular deployment architecture designed for scalable national infrastructure growth."
+            data-es="Arquitectura modular diseñada para crecimiento escalable de infraestructura nacional."
+          >
+            Modular deployment architecture
+            designed for scalable national
+            infrastructure growth.
+          </p>
+
+        </div>
+
+        <div class="glass rounded-3xl p-7">
+
+          <h3
+            class="text-2xl font-bold text-emerald-300"
+            data-en="Future Energy Networks"
+            data-es="Redes Energéticas Futuras"
+          >
+            Future Energy Networks
+          </h3>
+
+          <p
+            class="mt-4 text-slate-400"
+            data-en="Next-generation intelligent infrastructure energy systems under the True Green Doctrine."
+            data-es="Sistemas energéticos inteligentes de próxima generación bajo la Doctrina True Green."
+          >
+            Next-generation intelligent infrastructure
+            energy systems under the
+            True Green Doctrine.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- CONTACT -->
+  <section id="contact" class="px-6 py-20 md:px-16">
+
+    <div class="mx-auto max-w-7xl rounded-[2rem] bg-gradient-to-r from-cyan-400 to-emerald-400 p-10 text-black md:p-14">
+
+      <h2
+        class="text-4xl font-black md:text-5xl"
+        data-en="Ready for energy, infrastructure, and strategic partnerships."
+        data-es="Listos para alianzas energéticas, de infraestructura y estratégicas."
+      >
+        Ready for energy, infrastructure, and strategic partnerships.
+      </h2>
+
+      <p
+        class="mt-4 max-w-4xl text-lg font-medium"
+        data-en="Tritanium Power™ is being developed to support resilient infrastructure, solar deployment, intelligent microgrids, emergency continuity systems, and future energy technologies."
+        data-es="Tritanium Power™ está siendo desarrollado para respaldar infraestructura resiliente, despliegue solar, microredes inteligentes, sistemas de continuidad de emergencia y futuras tecnologías energéticas."
+      >
+        Tritanium Power™ is being developed
+        to support resilient infrastructure,
+        solar deployment,
+        intelligent microgrids,
+        emergency continuity systems,
+        and future energy technologies.
+      </p>
+
+      <div class="mt-10 flex flex-wrap gap-4">
+
+        <a
+          href="mailto:info@tritaniumcorp.com"
+          class="rounded-full bg-black px-6 py-3 font-bold text-white"
+          data-en="Contact Tritanium"
+          data-es="Contactar Tritanium"
+        >
+          Contact Tritanium
+        </a>
+
+        <a
+          href="https://tritaniumcorp.com"
+          class="rounded-full border border-black/20 px-6 py-3 font-bold"
+          data-en="Visit Tritanium"
+          data-es="Visitar Tritanium"
+        >
+          Visit Tritanium
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/10 px-6 py-10 text-sm text-slate-500 md:px-16">
+
+    <div class="mx-auto flex max-w-7xl flex-col gap-3 md:flex-row md:items-center md:justify-between">
+
+      <p>Tritanium Power™</p>
+
+      <p
+        data-en="True Green Doctrine • Resilient Infrastructure Energy"
+        data-es="Doctrina True Green • Energía de Infraestructura Resiliente"
+      >
+        True Green Doctrine • Resilient Infrastructure Energy
+      </p>
+
+      <p>© 2026 The Tritanium Corporation</p>
+
+    </div>
+
+  </footer>
+
+</main>
+
+<script>
+
+  let currentLang = "en";
+
+  function toggleLanguage() {
+
+    currentLang =
+      currentLang === "en"
+        ? "es"
+        : "en";
+
+    document
+      .querySelectorAll("[data-en]")
+      .forEach((el) => {
+
+        el.innerHTML =
+          currentLang === "en"
+            ? el.getAttribute("data-en")
+            : el.getAttribute("data-es");
+
+      });
+
+    document
+      .getElementById("langToggle")
+      .innerText =
+        currentLang === "en"
+          ? "Español"
+          : "English";
+
+    document.documentElement.lang =
+      currentLang;
+
+  }
+
+</script>
+
+</body>
+</html>
